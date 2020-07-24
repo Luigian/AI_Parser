@@ -7,3 +7,5 @@ Code from the course CS50's Introduction to Artificial Intelligence with Python 
 - N-grams detection (n-grams)
 
 - Sentence generator (markov)
+
+- Sentiment analysis (naive bayes)
