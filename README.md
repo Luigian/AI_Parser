@@ -9,3 +9,5 @@ Code from the course CS50's Introduction to Artificial Intelligence with Python 
 - Sentence generator (markov)
 
 - Sentiment analysis (naive bayes)
+
+- Topic modeling (term frequency - inverse document frequency)
