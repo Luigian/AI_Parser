@@ -11,3 +11,5 @@ Code of the course CS50's Introduction to Artificial Intelligence with Python 20
 - Sentiment analysis (naive bayes)
 
 - Topic modeling (term frequency - inverse document frequency)
+
+- Information extraction (automated template generation)
