@@ -14,4 +14,6 @@ Code of the course CS50's Introduction to Artificial Intelligence with Python 20
 
 - Information extraction (automated template generation)
 
-- Words meaning representation (wordnet lexical database)
+- Words meaning representation with a lexical database (wordnet)
+
+- Words meaning representation with distributed vectors (word2vec)
