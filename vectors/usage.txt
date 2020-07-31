@@ -1,0 +1,8 @@
+usage:
+
+$python3
+>>> from vectors import *
+>>> words["city"]
+>>> distance(words["book"], words["book"])
+>>> closest_words(words["book"])[:10]
+>>> closest_word(words["king"] - words["man"] + words["woman"])
