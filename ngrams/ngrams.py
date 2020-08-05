@@ -11,7 +11,7 @@ def main():
     """Calculate top term frequencies for a corpus of documents."""
 
     if len(sys.argv) != 3:
-        sys.exit("Usage: python tfidf.py n corpus")
+        sys.exit("Usage: python ngrams.py n corpus")
     print("Loading data...")
 
     n = int(sys.argv[1])
