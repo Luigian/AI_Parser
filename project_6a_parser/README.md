@@ -85,6 +85,7 @@ To parse a sentence, print the syntax trees, extract the noun phrases and print 
 
 ## Credits
 [*Luis Sanchez*][linkedin] 2020.
+
 A project from the course [CS50's Introduction to Artificial Intelligence with Python 2020] from HarvardX[cs50 ai].
 
 [cs50 lecture]: https://youtu.be/_hAVVULrZ0Q?t=629
