@@ -33,7 +33,7 @@
 
 * By defining a set of rules, the CYK algorithm, used by the `parse` method from the nltk library, is able to take a sentence (terminal symbols) and figure out the syntax tree (the structure of the non-terminal symbols).
 
-* According to how well the rules are stablished, this algorithm can prevent the generation of non-well formed sentences, but it can't detect some sentences that may not be semantically well-formed (non-sense sentences).
+* According to how well the rules are established, this algorithm can prevent the generation of non-well formed sentences, but it can't detect some sentences that may not be semantically well-formed (non-sense sentences).
 
 * The more rules are implemented, the more complex sentences it can parse.
 
@@ -43,7 +43,7 @@
 
 ### preprocess 
 
-The preprocess function accept a string as input and return a lowercased list of its words. 
+The preprocess function accept a string as input and return a lower cased list of its words. 
 The following methods are implemented inside this function: 
 * nltk’s `word_tokenize()` - Perform tokenization (split the string into words).
 * `lower()` - Convert all characters to lowercase.
@@ -60,7 +60,7 @@ Constraints:
 
 ### np_chunk
 
-The np_chunk function accept a tree representing the syntax of a sentence (nltk.tree object) and return a list of all of the noun phrase chunks in the sentence tree.
+The np_chunk function accept a tree representing the syntax of a sentence (nltk.tree object) and return a list of all the noun phrase chunks in the sentence tree.
 A noun phrase chunk is defined as any subtree of the sentence whose label is "NP" that does not itself contain any other noun phrases as subtrees.
 The following methods are implemented inside this function in order to manipulate the nltk.tree object:
 * nltk’s `subtrees()` - Generate all the subtrees of a tree, optionally restricted to trees matching the filter function.
