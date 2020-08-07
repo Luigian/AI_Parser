@@ -31,13 +31,13 @@
 |`PP`|Preposition Phrase|
 |`ConjP`|Conjugation Phrase|
 
-By defining a set of rules, the CYK algorithm, used by the `parse` method from the nltk library, is able to take a sentence (terminal symbols) and figure out the syntax tree (the structure of the non-terminal symbols).
+* By defining a set of rules, the CYK algorithm, used by the `parse` method from the nltk library, is able to take a sentence (terminal symbols) and figure out the syntax tree (the structure of the non-terminal symbols).
 
-According to how well the rules are stablished, this algorithm can prevent the generation of non-well formed sentences, but it can´t detect some sentences that may not be semantically well-formed (non-sense sentences).
+* According to how well the rules are stablished, this algorithm can prevent the generation of non-well formed sentences, but it can´t detect some sentences that may not be semantically well-formed (non-sense sentences).
 
-The more rules are implemented, the more complex sentences it can parse.
+* The more rules are implemented, the more complex sentences it can parse.
 
-Since English grammar is inherently ambiguous, the same sentences can produce more than one syntax structure.
+* Since English grammar is inherently ambiguous, the same sentences can produce more than one syntax structure.
 
 ## Implementation
 
@@ -74,14 +74,14 @@ The following methods are implemented inside this function in order to manipulat
 ## Installation
 Inside of the `ai_parser` directory:
 
-`pip3 install -r requirements.txt` | Install this project’s dependency: nltk for natural language processing.
+* `pip3 install -r requirements.txt` | Install this project’s dependency: nltk for natural language processing.
 
 ## Usage
 To parse a sentence, print the syntax trees, extract the noun phrases and print them:
 
-`python3 parser.py sentences/10.txt` | Accepts the sentence via a file.
+* `python3 parser.py sentences/10.txt` | Accepts the sentence via a file.
 
-`python3 parser.py` | Accepts the sentence via user input.
+* `python3 parser.py` | Accepts the sentence via user input.
 
 ## Credits
 [*Luis Sanchez*][linkedin] 2020.
