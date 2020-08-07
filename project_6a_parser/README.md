@@ -79,7 +79,8 @@ Inside of the `ai_parser` directory:
 ## Usage
 To parse a sentence, print the syntax trees, extract the noun phrases and print them:
 
-`python3 parser.py sentences/10.txt` | Accepts the sentence via a file. 
+`python3 parser.py sentences/10.txt` | Accepts the sentence via a file.
+
 `python3 parser.py` | Accepts the sentence via user input.
 
 ## Credits
