@@ -77,7 +77,7 @@ Inside of the `ai_parser` directory:
 * `pip3 install -r requirements.txt` | Install this project’s dependency: nltk for natural language processing.
 
 ## Usage
-To parse a sentence, print the syntax trees, extract the noun phrases and print them:
+To parse a sentence:
 
 * `python3 parser.py sentences/10.txt` | Accepts the sentence via a file.
 
@@ -93,7 +93,3 @@ A project from the course [CS50's Introduction to Artificial Intelligence with P
 [nltk documentation]: https://www.nltk.org/_modules/nltk/tree.html
 [linkedin]: https://www.linkedin.com/in/luis-sanchez-13bb3b189/
 [cs50 ai]: https://cs50.harvard.edu/ai/2020/
-
-
-
-
