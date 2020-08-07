@@ -84,12 +84,13 @@ To parse a sentence, print the syntax trees, extract the noun phrases and print 
 * `python3 parser.py` | Accepts the sentence via user input.
 
 ## Credits
-[*Luis Sanchez*][linkedin] 2020.
+[*Luis Sanchez*][linkedin] 2020, [A project from the course CS50's Introduction to Artificial Intelligence with Python 2020 from HarvardX][cs50 ai].
 
 [cs50 lecture]: https://youtu.be/_hAVVULrZ0Q?t=629
 [analyzing english grammar]: http://www.csun.edu/~galasso/completehandbook.htm
 [nltk documentation]: https://www.nltk.org/_modules/nltk/tree.html
 [linkedin]: https://www.linkedin.com/in/luis-sanchez-13bb3b189/
+[cs50 ai]: https://cs50.harvard.edu/ai/2020/
 
 
 
