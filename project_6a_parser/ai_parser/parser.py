@@ -30,19 +30,18 @@ parser = nltk.ChartParser(grammar)
 
 def main():
 
-    # If filename specified, read sentence from file
+    # If filename specified, read sentence from file.
+    # Otherwise, get sentence as input.
     if len(sys.argv) == 2:
         with open(sys.argv[1]) as f:
             s = f.read()
-
-    # Otherwise, get sentence as input
     else:
         s = input("Sentence: ")
 
-    # Convert input into list of words
+    # Convert input into list of words.
     s = preprocess(s)
 
-    # Attempt to parse sentence
+    # Attempt to parse sentence.
     try:
         trees = list(parser.parse(s))
     except ValueError as e:
@@ -52,22 +51,22 @@ def main():
         print("Could not parse sentence.")
         return
 
-    # Print each tree with noun phrase chunks
+    # Print each tree with noun phrase chunks.
     for tree in trees:
         tree.pretty_print()
-
-        # print("Noun Phrase Chunks")
-        # for np in np_chunk(tree):
-        #     print(" ".join(np.flatten()))
+        
+        print("Noun Phrase Chunks")
+        for np in np_chunk(tree):
+            print(" ".join(np.flatten()))
 
 
 def preprocess(sentence):
-    # Convert `sentence` to a list of its words
-    # Convert all characters to lowercase
-    # Remove any word that does not contain at least one alphabetic character
-
+    # Convert `sentence` to a list of its words.
+    # Convert all characters to lowercase.
+    # Remove any word that does not contain at 
+    # least one alphabetic character.
     contents = []
-    
+
     contents.extend([
         word.lower() for word in
         nltk.word_tokenize(sentence)
@@ -77,13 +76,16 @@ def preprocess(sentence):
     
 
 def np_chunk(tree):
-    """
-    Return a list of all noun phrase chunks in the sentence tree.
-    A noun phrase chunk is defined as any subtree of the sentence
-    whose label is "NP" that does not itself contain any other
-    noun phrases as subtrees.
-    """
-    raise NotImplementedError
+    # Return a list of all noun phrase chunks in the sentence tree.
+    # A noun phrase chunk is defined as any subtree of the sentence
+    # whose label is "NP" that does not itself contain any other
+    # noun phrases as subtrees.
+    contents = []
+    
+    for s in tree.subtrees(lambda t: t.label() == "NP"):
+        if s[0].label() != "NP":
+            contents.extend([s])
+    return contents
 
 
 if __name__ == "__main__":
