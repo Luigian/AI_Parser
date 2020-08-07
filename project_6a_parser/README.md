@@ -1,5 +1,7 @@
 # AI Parser
 
+<img src="resources/aiparser_output.png" width="1000">
+
 ## Highlights
 
 * The goal of this project was to write an AI to parse sentences, print their syntax tree, and extract noun phrases.
@@ -60,18 +62,33 @@ Constraints:
 
 The np_chunk function accept a tree representing the syntax of a sentence (nltk.tree object) and return a list of all of the noun phrase chunks in the sentence tree.
 A noun phrase chunk is defined as any subtree of the sentence whose label is "NP" that does not itself contain any other noun phrases as subtrees.
-This following methods are implemented inside this function in order to manipulate the nltk.tree object:
-* `subtrees()` - Generate all the subtrees of a tree, optionally restricted to trees matching the filter function.
-* `label()` - Return the node label of the tree.
+The following methods are implemented inside this function in order to manipulate the nltk.tree object:
+* nltk’s `subtrees()` - Generate all the subtrees of a tree, optionally restricted to trees matching the filter function.
+* nltk’s `label()` - Return the node label of the tree.
 
 ## Resources
 * [CS50 AI Language Lecture][cs50 lecture]
 * [Analyzing English Grammar][analyzing english grammar]
 * [NLTK 3.5 documentation][nltk documentation]
 
+## Installation
+Inside of the `ai_parser` directory:
+
+`pip3 install -r requirements.txt` | Install this project’s dependency: nltk for natural language processing.
+
+## Usage
+To parse a sentence, print the syntax trees, extract the noun phrases and print them:
+
+`python3 parser.py sentences/10.txt` | Accepts the sentence via a file. 
+`python3 parser.py` | Accepts the sentence via user input.
+
+## Credits
+[*Luis Sanchez*][linkedin] 2020.
+
 [cs50 lecture]: https://youtu.be/_hAVVULrZ0Q?t=629
 [analyzing english grammar]: http://www.csun.edu/~galasso/completehandbook.htm
 [nltk documentation]: https://www.nltk.org/_modules/nltk/tree.html
+[linkedin]: https://www.linkedin.com/in/luis-sanchez-13bb3b189/
 
 
 
