@@ -1,6 +1,6 @@
 # AI Parser
 
-<img src="resources/aiparser_output.png" width="1000">
+<img src="resources/aiparser_output.jpg" width="1000">
 
 ## Highlights
 
