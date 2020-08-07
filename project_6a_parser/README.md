@@ -33,7 +33,7 @@
 
 * By defining a set of rules, the CYK algorithm, used by the `parse` method from the nltk library, is able to take a sentence (terminal symbols) and figure out the syntax tree (the structure of the non-terminal symbols).
 
-* According to how well the rules are stablished, this algorithm can prevent the generation of non-well formed sentences, but it can´t detect some sentences that may not be semantically well-formed (non-sense sentences).
+* According to how well the rules are stablished, this algorithm can prevent the generation of non-well formed sentences, but it can't detect some sentences that may not be semantically well-formed (non-sense sentences).
 
 * The more rules are implemented, the more complex sentences it can parse.
 
