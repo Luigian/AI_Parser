@@ -12,7 +12,7 @@ Noun phrases and verbs phrases might not always be as simple as a single word li
 
 To incorporate this rule into how we parse a sentence (`S`), we need to modify the `S -> N V` rule to `S -> NP V`, to allow for noun phrases (`NP`) as the subject of our sentence. To account for more complex types of noun phrases, we need more rules to complement the grammar even further. The more rules are implemented, the more complex sentences we can parse.
 
-By defining this set of rules, the CYK algorithm, used by nltk's `parse`, is able to take a sentence (terminal symbols) and figure out the syntax tree (the structure of the non-terminal symbols).
+By defining this set of rules, the CYK algorithm, used by nltk's `parse`, is able to take a sentence (terminal symbols) and figure out the **syntax tree** (the structure of the non-terminal symbols).
 
 According to how well the rules are established, this algorithm can detect non-well formed sentences, but it's incapable to detect some sentences that may not be semantically well-formed (non-sense sentences).
 
@@ -40,15 +40,15 @@ In `parser.py`, the main function first accepts a sentence as input, either from
 
 * Each rule include the `->` characters to denote which symbol is being replaced, and may optionally include `|` symbols if there are multiple ways to rewrite a symbol.
 
-* When combined both set of rules, we can parse of all sentences in the `sentences` directory.
+* When combined both set of rules, we can parse all the sentences in the `sentences` directory.
 
 **Some constraints:** 
 
-* Avoid over-generation of sentences, sentences like "Armchair on the sat Holmes" aren't meant to be accepted by the parser.
+* Avoiding over-generation of sentences, sentences like "Armchair on the sat Holmes" aren't accepted by the parser.
 
-* Avoid  under-generation of sentences. A very long and specific rule like `(S -> N V Det Adj Adj Adj N P Det N P Det N)` would technically successfully generate sentence 10, but isn't useful or generalizable.
+* Avoiding under-generation of sentences. A very long and specific rule like `(S -> N V Det Adj Adj Adj N P Det N P Det N)` would technically successfully generate sentence 10, but isn't useful or generalizable.
 
-* Try to be as general as possible without over-generating. The parser should accept the sentences: “Holmes sat in the armchair”, “Holmes sat in the red armchair” and “Holmes sat in the little red armchair”, but not the sentence: “Holmes sat in the the armchair”.
+* Trying to be as general as possible without over-generating. The parser accepts the sentences: “Holmes sat in the armchair”, “Holmes sat in the red armchair” and “Holmes sat in the little red armchair”, but not the sentence: “Holmes sat in the the armchair”.
 
 ### Extracting the noun phrases
 
